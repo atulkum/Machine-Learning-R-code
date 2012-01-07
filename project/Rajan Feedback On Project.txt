@@ -1,0 +1,17 @@
+Hi Atul,
+
+Here are some comments followed by your score:
+
+First and foremost, thanks for participating in the class project.  From reading your report it's clear that you spent alot of time thinking about the issues and thoughtfully went about the data mining process.
+
+While visualizing the training data, you might find it beneficial to see how each attribute relates to the probability of being in the positive class.  For example, 2x2 tables for each of the binary fields/flags as well as relative frequency polygons for perhaps sig2-sig8.  Those would help you visualize which features may be important in your model and which features you may want to consider as categorical and which you might want to consider as numeric.
+
+Rescaling your attributes to all have the same mean and variance may help improve some classifiers like k-nn and svm.  R may take care of some of this for you, but it's always best to do it yourself so that you know it's being done right.
+
+It would have been interesting to compute the correlation across your different classifiers to see if an ensemble of all of the ones you trained and tested might have outperformed your single best classifier.  If the correlation is low, then an ensemble may buy you a lot, but if the correlation is high it probably won't make much of a difference.
+
+Your misclassification error on the test set should show up on the grades spreadsheet.
+
+Score: 170 / 200
+
+Rajan

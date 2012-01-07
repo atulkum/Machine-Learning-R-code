@@ -1,0 +1,63 @@
+> cor(sig3, sig5)
+[1] 0.8147501
+//////////////
+overall importance and query-specific relevance
+page rank
+
+query length less more easy to serach for the relevence - so the data is more relevent
+document that has query length 1 are more relevent on avg than documetns come from longer query
+
+url is the home page or not?
+
+signal 1,2,7,8 no transform
+3-6 - right skewed
+
+lot of zero - if 0 is special case
+can create a signal9 -- is sig6 == 0 or not
+
+row count -- binned them - 0-9 one bin, 10-99 2nd bin
+
+using svm -taking the log is appropriate
+svm, normally distributed - 
+substartct the mean and divide by std dev - helps in knn
+
+colinear attr (duplicate signals) - decision tree, svm is robust
+but knn not 
+
+recall precision
+missclassification error
+
+univariant analysis
+
+of documetn i classified 80% are relevent - not directly say precison is this etc.
+
+
+result is a home page or not -- home page should be more relevent
+
+svm
+decision tree
+naive bayes
+clustering
+knn
+random forest
+boosting
+bagging
+
+simplify the data -
+
+visualize the data set
+right tail, outlier
+taking the log transform - to remove right tail
+
+signal 5 low mediam high
+
+
+add 1, take log and round the log -- binning
+log base 10 -- 0 to 10 in one bucket
+11 to 100 in one bucket
+
+
+step 1) analyse the "query_length" "is_homepage"
+query_len -- 1 to 8 
+and 9+
+
